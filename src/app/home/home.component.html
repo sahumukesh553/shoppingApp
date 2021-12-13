@@ -1,0 +1,20 @@
+<div highlight>happy happy </div>
+<div appRenderHighLight [HightLightColor]="'pink'">hi green</div>
+<app-products  [products]="products" (productAdded)="addProduct($event)"><h3 #title>Product List</h3></app-products>
+<div *ngIf="isTrue">Hi i am here</div>
+<ng-template [ngIf]="isTrue">
+    <div >Hi i am also here</div>
+</ng-template>
+<div *appAternateIf="isTrue">custom structural directive</div>
+<div [ngSwitch]="switch">
+    <p *ngSwitchCase="1">1</p>
+    <p *ngSwitchCase="2">2</p>
+    <p *ngSwitchCase="3">3</p>
+    <p *ngSwitchCase="4">4</p>
+    <p *ngSwitchCase="5">5</p>
+    <p *ngSwitchCase="6">6</p>
+    <p *ngSwitchCase="7">7</p>
+    <p *ngSwitchCase="8">8</p>
+    <p *ngSwitchCase="9">9</p>
+    <p *ngSwitchDefault>default</p>
+</div>

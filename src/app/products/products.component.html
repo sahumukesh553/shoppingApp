@@ -1,0 +1,4 @@
+<ng-content></ng-content>
+<input type="text" #newProduct>
+<button (click)="OnProductAdded(newProduct)">add</button>
+<h3 *ngFor="let product of products"> {{product}}</h3>

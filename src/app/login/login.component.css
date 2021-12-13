@@ -1,0 +1,21 @@
+*{
+    margin: 5px;
+}
+input {
+    display: block;
+}
+.form{
+   background-color: darkgray;
+    
+    width: 50%;
+    padding-left: 5cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+}
+button{
+    border: blue solid ;
+    padding-right: 10px;
+    background-color: blue;
+    color: cornsilk;
+
+}
