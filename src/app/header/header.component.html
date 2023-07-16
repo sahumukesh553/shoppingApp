@@ -1,1 +1,5 @@
-<p>header works!</p>
+<li routerLinkActive="active" #rs="routerLinkActive" [ngClass]="rs.isActive?'active':''">
+    <a routerLink="/login"  >login</a>
+    <a routerLink="/home" routerLinkActive="active">home</a>
+    <a routerLink="/products" routerLinkActive="active">product</a>
+</li>

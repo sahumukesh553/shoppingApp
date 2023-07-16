@@ -13,7 +13,18 @@ import { ProductsComponent } from './products/products.component';
 import { HighLight } from './directive/HighLight.directive';
 import { RenderHighLightDirective } from './directive/render-high-light.directive';
 import { AternateIfDirective } from './directive/aternate-if.directive';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { RouterModule  ,Routes} from '@angular/router';
+const routes: Routes = [
+  {
+    path:"login",component:LoginComponent
+  }
+  ,{
+    path:"home",component:HomeComponent
+  },{
+    path:"products",component:ProductsComponent
+  }
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,11 +36,12 @@ import { AternateIfDirective } from './directive/aternate-if.directive';
     ProductsComponent,
     HighLight,
     RenderHighLightDirective,
-    AternateIfDirective
+    AternateIfDirective,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+  RouterModule.forRoot(routes),
     FormsModule
   ],
   providers: [],
